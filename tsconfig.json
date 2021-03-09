@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"lib": [ "DOM", "ES2018" ],
+		"moduleResolution": "node",
+		"target": "ES5",
+	},
+	"files": [
+		"./example.ts",
+	],
+}

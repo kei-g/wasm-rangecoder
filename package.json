@@ -1,0 +1,26 @@
+{
+  "author": {
+    "email": "km.8k6ce+github@gmail.com",
+    "name": "kei-g"
+  },
+  "description": "RangeCoder implementation with WebAssembly",
+  "dependencies": {
+    "@types/node": "^14.14.32",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "keywords": [
+    "RangeCoder",
+    "WebAssembly"
+  ],
+  "license": "BSD-3-Clause License",
+  "name": "wasm-rangecoder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kei-g/wasm-rangecoder.git"
+  },
+  "scripts": {
+    "example": "ts-node -P tsconfig.json example.ts"
+  },
+  "version": "1.0.0"
+}

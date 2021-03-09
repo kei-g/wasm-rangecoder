@@ -1,0 +1,6 @@
+**/*.o
+**/*.wasm
+**/.vscode/
+**/alice29.txt.rc
+**/decompressed.txt
+**/node_modules/

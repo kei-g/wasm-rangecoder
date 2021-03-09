@@ -1,0 +1,27 @@
+language: node_js
+dist: focal
+node_js:
+  - 10
+notification:
+  email: false
+addons:
+  apt:
+    packages:
+      - clang-10
+      - clang-tools-10
+      - lld-10
+      - llvm-10
+      - llvm-10-dev
+      - llvm-10-runtime
+      - llvm-10-tools
+install:
+  - npm install @types/node
+  - npm install typescript
+  - npm install ts-node
+script:
+  - clang-10 -D NDEBUG -Ofast -Wall -Werror -target wasm32-wasm -c compress.c
+  - clang-10 -D NDEBUG -Ofast -Wall -Werror -target wasm32-wasm -c decompress.c
+  - clang-10 -D NDEBUG -Ofast -Wall -Werror -target wasm32-wasm -c rangecoder.c
+  - wasm-ld-10 --allow-undefined --export=compress --export=decompress --no-entry --strip-debug -o rangecoder.wasm compress.o decompress.o rangecoder.o
+  - npm run example
+  - cmp decompressed.txt alice29.txt
