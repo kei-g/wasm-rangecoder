@@ -2,4 +2,4 @@
 
 RangeCoder implementation with WebAssembly
 
-[![Build Status](https://travis-ci.org/kei-g/wasm-rangecoder.svg?branch=master)](https://travis-ci.org/github/kei-g/wasm-rangecoder)
+[![Build Status](https://travis-ci.com/kei-g/wasm-rangecoder.svg?branch=master)](https://travis-ci.com/github/kei-g/wasm-rangecoder)
