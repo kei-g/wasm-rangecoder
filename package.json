@@ -13,7 +13,7 @@
     "RangeCoder",
     "WebAssembly"
   ],
-  "license": "BSD-3-Clause License",
+  "license": "BSD-3-Clause",
   "name": "wasm-rangecoder",
   "repository": {
     "type": "git",
