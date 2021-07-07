@@ -14,10 +14,6 @@ addons:
       - llvm-10-dev
       - llvm-10-runtime
       - llvm-10-tools
-install:
-  - npm install @types/node
-  - npm install typescript
-  - npm install ts-node
 script:
   - clang-10 -D NDEBUG -Ofast -Wall -Werror -target wasm32-wasm -c compress.c
   - clang-10 -D NDEBUG -Ofast -Wall -Werror -target wasm32-wasm -c decompress.c
