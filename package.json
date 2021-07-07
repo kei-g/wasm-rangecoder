@@ -15,6 +15,7 @@
   ],
   "license": "BSD-3-Clause",
   "name": "wasm-rangecoder",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/kei-g/wasm-rangecoder.git"
