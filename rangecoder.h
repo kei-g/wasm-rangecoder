@@ -21,16 +21,16 @@ typedef union _uint64 uint64_u;
 void shift_left(uint64_u *dst, int length);
 
 struct _frequency {
-	uint32_t count;
-	uint32_t cumulated;
+  uint32_t count;
+  uint32_t cumulated;
 };
 
 union _uint64 {
-	struct {
-		uint32_t lo;
-		uint32_t hi;
-	};
-	uint64_t value;
+  struct {
+    uint32_t lo;
+    uint32_t hi;
+  };
+  uint64_t value;
 };
 
 #endif /* __include_rangecoder_h__ */

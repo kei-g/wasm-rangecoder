@@ -5,6 +5,6 @@ _Static_assert(sizeof(unsigned long long) == 8, "sizeof(unsigned long long) ough
 
 void shift_left(uint64_u *dst, int length)
 {
-	dst->hi = dst->lo >> (32 - length) | dst->hi << length;
-	dst->lo <<= length;
+  dst->hi = dst->lo >> (32 - length) | dst->hi << length;
+  dst->lo <<= length;
 }
